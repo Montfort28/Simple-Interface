@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-icon">H</div>
+      HomeHub
+    </div>
+    
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Devices</a>
+      <a href="#">Rooms</a>
+      <a href="#">Analytics</a>
+      <a href="#">Settings</a>
+    </nav>
+    
+    <div class="user-profile">
+      <div class="avatar">J</div>
+      <span>John Doe</span>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Temperature Card -->
+    <div class="dashboard-card">
+      <div class="card-header">
+        <div class="card-title">Temperature</div>
+        <div class="card-icon temperature-icon">🌡️</div>
+      </div>
+      <div class="card-content">
+        <div class="big-stat">72°F</div>
+        <div class="stat-label">Current Indoor Temperature</div>
+        
+        <div class="temp-controls">
+          <button class="temp-btn">-</button>
+          <div class="big-stat">70°F</div>
+          <button class="temp-btn">+</button>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="stat-label">Updated 2 mins ago</div>
+        <a href="#" class="view-all">View History</a>
+      </div>
+    </div>
+    
+    <!-- Security Card -->
+    <div class="dashboard-card">
+      <div class="card-header">
+        <div class="card-title">Security</div>
+        <div class="card-icon security-icon">🔒</div>
+      </div>
+      <div class="card-content">
+        <div class="device-list">
+          <div class="device-item">
+            <div class="device-name">
+              <span>Front Door</span>
+            </div>
+            <div class="device-status">
+              <div class="status-indicator status-on"></div>
+              <span>Locked</span>
+            </div>
+          </div>
+          <div class="device-item">
+            <div class="device-name">
+              <span>Back Door</span>
+            </div>
+            <div class="device-status">
+              <div class="status-indicator status-on"></div>
+              <span>Locked</span>
+            </div>
+          </div>
+          <div class="device-item">
+            <div class="device-name">
+              <span>Motion Sensors</span>
+            </div>
+            <div class="device-status">
+              <div class="status-indicator status-on"></div>
+              <span>Active</span>
+            </div>
+          </div>
+          <div class="device-item">
+            <div class="device-name">
+              <span>Alarm System</span>
+            </div>
+            <div class="device-status">
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="stat-label">All systems normal</div>
+        <a href="#" class="view-all">View All</a>
+      </div>
+    </div>
+    
+    <!-- Lighting Card -->
+    <div class="dashboard-card">
+      <div class="card-header">
+        <div class="card-title">Lighting</div>
+        <div class="card-icon lighting-icon">💡</div>
+      </div>
+      <div class="card-content">
+        <div class="device-list">
+          <div class="device-item">
+            <div class="device-name">
+              <span>Living Room</span>
+            </div>
+            <div class="device-status">
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="device-item">
+            <div class="device-name">
+              <span>Kitchen</span>
+            </div>
+            <div class="device-status">
+              <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="device-item">
+            <div class="device-name">
+              <span>Bedroom</span>
+            </div>
+            <div class="device-status">
+              <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="device-item">
+            <div class="device-name">
+              <span>Bathroom</span>
+            </div>
+            <div class="device-status">
+              <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="stat-label">1/4 rooms on</div>
+        <a href="#" class="view-all">View All</a>
+      </div>
+    </div>
+    
+    <!-- Energy Card -->
+    <div class="dashboard-card">
+      <div class="card-header">
+        <div class="card-title">Energy Usage</div>
+        <div class="card-icon energy-icon">⚡</div>
+      </div>
+      <div class="card-content">
+        <div class="big-stat">4.2 kWh</div>
+        <div class="stat-label">Today's Usage</div>
+        
+        <div class="progress-bar">
+          <div class="progress-value" style="width: 65%"></div>
+        </div>
+        <div class="stat-label">65% of daily average</div>
+      </div>
+      <div class="card-footer">
+        <div class="stat-label">12.5% less than yesterday</div>
+        <a href="#" class="view-all">View Details</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
